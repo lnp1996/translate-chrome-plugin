@@ -1,5 +1,5 @@
 {
-    "name": "base chrome plugin chrome",
+    "name": "Hover Translate",
     "description": "a simple chrome plugin",
     "version": "1.0.0",
     "manifest_version": 3,

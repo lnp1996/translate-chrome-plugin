@@ -8,7 +8,8 @@ interface Props {}
 
 const App: React.FC<Props> = (props) => {
   const {} = props;
-  return <Content />;
+  // return <Content />;
+  return <h1>你好呀</h1>;
 };
 
 export default App;

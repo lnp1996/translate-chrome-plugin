@@ -3,3 +3,31 @@ body {
   padding: 0;
   margin: 0;
 }
+
+
+/* content css */
+
+.tooltip {
+  position: fixed;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  transition: opacity 0.3s;
+  pointer-events: none; /* 防止 tooltip 阻挡鼠标事件 */
+}
+
+/* 下尖角效果 */
+/* .tooltip::before { 
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px; 
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent; 
+} */

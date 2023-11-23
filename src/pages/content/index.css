@@ -1,0 +1,25 @@
+
+/* 此文件不生效，需要写在：asserts/css */
+.tooltip {
+  position: fixed;
+  padding: 8px 12px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  transition: opacity 0.3s;
+  pointer-events: none; /* 防止 tooltip 阻挡鼠标事件 */
+}
+
+.tooltip::after { /* 尖角效果 */
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+}

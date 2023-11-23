@@ -26,10 +26,11 @@ module.exports = (env) => {
   // require("dotenv").config({
   //   path: `.env.${env.mode}`,
   // });
-  const fileName = `${packageObj.name}-${formatTime(
-    Date.now(),
-    "YYYYMMDD-HHmmss"
-  )}`;
+  // const fileName = `${packageObj.name}-${formatTime(
+  //   Date.now(),
+  //   "YYYYMMDD-HHmmss"
+  // )}`;
+  const fileName = `${packageObj.name}`;
   const PluginFileAssetsName = `dist/${env.mode}/${fileName}`;
   let mode = ["test", "local"].includes(env.mode) ? "production" : env.mode;
   return {
@@ -70,7 +71,7 @@ module.exports = (env) => {
       // },
     },
 
-    devtool: false,
+    devtool: 'source-map',  // eval-cheap-module-source-map
     performance: {
       hints: false,
     },
