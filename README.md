@@ -33,8 +33,11 @@
   yarn i
 ```
 
-- 编辑器中全局搜索"TODO"（其实就是到 src/pages/content/index.js 中），修改自己的appID 以及密钥
-- 目前仅支持了：百度翻译，自己注册一个appID，每月200万字符，自用够了。
+- 编辑器中全局搜索"TODO"（其实就是到 src/pages/content/index.js 中），修改自己的appID 以及密钥。
+- 然后打包、浏览器加载dist/base-chrome-plugin 文件夹即可
+- 目前支持：百度翻译引擎。 英文 => 中文
+- API appid申请地址： https://fanyi-api.baidu.com/api/trans/product/desktop?req=detail
+- 自己注册一个appID，每月200万字符免费，自用够了。
 
 - 打包运行插件,生成插件`manifest.json`包
 
@@ -74,8 +77,10 @@ pnpm run build
 
 ### 插件预览
 
+- 选择文本，则会在文本上方出现对应翻译
 ![](./src/assets/imgs/demo1.png)
 ![](./src/assets/imgs/demo2.png)
+
 
 ### 最后
 
