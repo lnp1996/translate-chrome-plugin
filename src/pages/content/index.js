@@ -10,8 +10,7 @@ import getMD5 from "./md5";
 var tooltipHeight;
 let tooltip; // 用来存储全局 tooltip 的变量
 const __tooltip__id = "__tooltip__id"; //标识
-
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "xxxxxxx";
 const prompt = `Translate this into Chinese:
       hello world`;
 
