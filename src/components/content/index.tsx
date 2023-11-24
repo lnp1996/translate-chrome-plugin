@@ -1,6 +1,5 @@
 /**
  * @description 请添加组件描述
- * @author maicFir
  */
 import React, { memo } from "react";
 import style from "./index.module.scss";

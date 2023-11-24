@@ -1,6 +1,5 @@
 /**
  * @description 插件基础配置
- * @author maicFir
  */
 const Html = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
@@ -71,7 +70,7 @@ module.exports = (env) => {
       // },
     },
 
-    devtool: 'source-map',  // eval-cheap-module-source-map
+    devtool: "source-map", // eval-cheap-module-source-map
     performance: {
       hints: false,
     },

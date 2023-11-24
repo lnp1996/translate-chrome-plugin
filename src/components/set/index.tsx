@@ -1,6 +1,5 @@
 /**
  * @description 设置页面
- * @author maicFir
  */
 import React, { useState } from "react";
 import style from "./index.module.scss";
@@ -34,8 +33,6 @@ const Index: React.FC<Props> = (props) => {
       </div>
       <h1>color</h1>
       <div className="public-name">
-        <p className="name1">公众号：Web技术学苑</p>
-        <p className="name2">公众号：Web技术学苑</p>
       </div>
       <h1>warn</h1>
       <div className="warn-app">

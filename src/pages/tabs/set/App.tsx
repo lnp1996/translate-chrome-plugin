@@ -1,6 +1,5 @@
 /**
  * @description set
- * @author maicFir
  */
 import React from "react";
 import Set from "@comp/set";

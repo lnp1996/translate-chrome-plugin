@@ -1,6 +1,5 @@
 /**
  * @description popup
- * @author maicFir
  */
 import React, { useState, memo } from "react";
 import style from "./index.module.scss";

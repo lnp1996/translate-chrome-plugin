@@ -1,6 +1,5 @@
 /**
  * @description index.js content内容挂在到当前打开的页面中
- * @author maicFir
  */
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -16,9 +15,10 @@ const prompt = `Translate this into Chinese:
 
 // 翻译平台API映射
 const apiFunMap = {
+  //百度翻译，API appid申请地址： https://fanyi-api.baidu.com/api/trans/product/desktop?req=detail
   baidu: async (word) => {
-    const appid = "20231124001890466";
-    const key = "xxxxxxxx"; //TODO 自己的翻译API密钥
+    const appid = "20231124001890466"; //TODO 自己的翻译appid
+    const key = "xxxxxxxx";            //TODO 自己的翻译API密钥
     const salt = new Date().getTime();
     // const word = word;
     var from = "en";
