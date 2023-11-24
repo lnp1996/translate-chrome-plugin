@@ -74,7 +74,7 @@ pnpm run build
 
 ### 插件预览
 
-![](/Users/sm3252/lnp/projects/myProjects/translate-chrome-plugin/src/assets/imgs/demo1.png)
+![](./src/assets/imgs/demo1.png)
 
 ### 最后
 
