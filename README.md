@@ -74,7 +74,7 @@ pnpm run build
 
 ### 插件预览
 
-![](./src/assets/imgs/demo1.png)
+![](./src/assets/imgs/overview.mov)
 
 ### 最后
 
