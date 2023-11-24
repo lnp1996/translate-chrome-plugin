@@ -58,13 +58,6 @@ const apiFunMap = {
 async function translateWord(word) {
   // 这里应该调用翻译 API，返回 Promise
   try {
-    function isEnglishTextWithPunctuation(input) {
-        return /^[A-Za-z0-9 .,']+$/.test(input);
-    }
-    if(!isEnglishTextWithPunctuation(word)){
-        return Promise.resolve("选择内容不纯粹");
-        // throw new Error("选择内容不纯粹");
-    }
     const res = await apiFunMap["baidu"](word);
     console.log(res);
     return res;
