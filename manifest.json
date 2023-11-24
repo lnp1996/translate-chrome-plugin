@@ -1,6 +1,6 @@
 {
-    "name": "Hover Translate",
-    "description": "a simple chrome plugin",
+    "name": "Focus Translate",
+    "description": "Select a region for translation",
     "version": "1.0.0",
     "manifest_version": 3,
     "action": {

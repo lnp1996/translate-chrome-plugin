@@ -4,24 +4,27 @@ body {
   margin: 0;
 }
 
-
 /* content css */
 
-.tooltip {
+.__tooltip__id {
   position: fixed;
-  padding: 8px 12px;
+  padding: 5px 7px;
   color: #fff;
   background-color: #333;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 13px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   z-index: 9999;
   transition: opacity 0.3s;
   pointer-events: none; /* 防止 tooltip 阻挡鼠标事件 */
+  max-width: 400px; /* 设置 div 的最大宽度 */
+  line-height: 1.3;
+  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* 下尖角效果 */
-/* .tooltip::before { 
+/* .__tooltip__xxx::before { 
   content: "";
   position: absolute;
   top: 100%;
