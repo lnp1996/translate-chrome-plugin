@@ -9,34 +9,38 @@ import getMD5 from "./md5";
 var tooltipHeight;
 let tooltip; // 用来存储全局 tooltip 的变量
 const __tooltip__id = "__tooltip__id"; //标识
-const OPENAI_API_KEY = "xxxxxxx";
-const prompt = `Translate this into Chinese:
-      hello world`;
 
 // 翻译平台API映射
 const apiFunMap = {
   //百度翻译，API appid申请地址： https://fanyi-api.baidu.com/api/trans/product/desktop?req=detail
   baidu: async (word) => {
     const appid = "20231124001890466"; //TODO 自己的翻译appid
-    const key = "xxxxxxxx";            //TODO 自己的翻译API密钥
+    const key = "xxxxxxxx"; //TODO 自己的翻译API密钥
     const salt = new Date().getTime();
     // const word = word;
     var from = "en";
     var to = "zh";
     var str1 = appid + word + salt + key;
     var sign = getMD5(str1);
-    
+
     // 构造查询字符串
-    const query = `q=${encodeURIComponent(word)}&appid=${appid}&salt=${salt}&from=${from}&to=${to}&sign=${sign}`;
-    
+    const query = `q=${encodeURIComponent(
+      word
+    )}&appid=${appid}&salt=${salt}&from=${from}&to=${to}&sign=${sign}`;
+
     // 发起 fetch 请求
-    const res = await fetch(`https://api.fanyi.baidu.com/api/trans/vip/translate?${query}`);
+    const res = await fetch(
+      `https://api.fanyi.baidu.com/api/trans/vip/translate?${query}`
+    );
     const response = await res.json();
     return response?.trans_result[0]?.dst;
   },
   //   "google": "google",
   //   "youdao": "youdao",
   openai: async (prompt) => {
+    const OPENAI_API_KEY = "xxxxxxx";
+    const prompt = `Translate this into Chinese:
+          hello world`;
     const res = await fetch("https://api.openai.com/v1/completions", {
       method: "POST",
       headers: {
