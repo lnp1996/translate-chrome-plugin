@@ -1,6 +1,6 @@
 ### translate-chrome-plugin
 
-> 基于webpack5的 chrome 插件基础项目 - 顺滑的划词翻译
+> Chrome plugin basic project - smooth word translation
 
 ### Technology Stack
 
