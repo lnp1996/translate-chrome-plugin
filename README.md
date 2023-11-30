@@ -2,28 +2,28 @@
 
 > 基于webpack5的 chrome 插件基础项目 - 顺滑的划词翻译
 
-### 项目使用技术栈
+### Technology Stack
 
 - 🔥 `webpack5`、`webpack-cli`,`webpack-dev-server`
 - 🔥 `react`, `react-router`,`typescript`
 - 🔥`babel`,`typescript`、`tailwindcss`, `sass`
 - ...
 
-### 如何运行
+### Run
 
-- 克隆该项目地址
+- clone
 
 ```bash
   git clone git@github.com:lnp1996/translate-chrome-plugin.git
 ```
 
-- 进入当前目录
+- cd
 
 ```bash
   cd translate-chrome-plugin
 ```
 
-- 安装依赖包
+- install
 
 ```bash
   npm i
@@ -49,9 +49,9 @@ pnpm run build
 
 - 浏览器输入`chrome://extensions`or `扩展程序>管理扩展程序>加载已解压的扩展程序`>加载含有`manifest.json`文件夹
 
-### 插件不同环境
+### Environments
 
-- 本地开发环境
+- dev
 
 ```bash
   npm run build:dev
@@ -59,7 +59,7 @@ pnpm run build
   pnpm run build:dev
 ```
 
-- 测试环境
+- test
 
 ```bash
   npm run build:test
@@ -67,7 +67,7 @@ pnpm run build
   pnpm run build:test
 ```
 
-- 生产环境
+- prod
 
 ```bash
   npm run build
@@ -75,13 +75,14 @@ pnpm run build
   pnpm run build
 ```
 
-### 插件预览
+### View
 
 - 选择文本，则会在文本上方出现对应翻译
 ![](./src/assets/imgs/demo1.png)
 ![](./src/assets/imgs/demo2.png)
 
 
-### 最后
+### Finally
 
 - 如果看完项目，觉得有所收获或帮助，就不要吝啬给个`star`鼓励下作者吧~
+- don't hesitate to give a 'star' to encourage the author~
